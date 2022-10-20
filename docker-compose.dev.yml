@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app-countries:
+    container_name: countries-quasar
+    restart: always
+    build: .
+    command: npm run dev
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8080:8080"

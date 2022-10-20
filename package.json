@@ -1,14 +1,22 @@
 {
-  "name": "my-app",
+  "name": "country-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "dev": "nodemon",
+    "lint": "vue-cli-service lint",
+    "husky-install": "husky install",
+    "husky-fix": "npx mrm lint-staged",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
+    "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
+    "quasar": "^2.0.0",
     "vue": "^3.2.13"
   },
   "devDependencies": {
@@ -18,7 +26,13 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint-plugin-vue": "^8.0.3",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "nodemon": "^2.0.20",
+    "sass": "1.32.12",
+    "sass-loader": "^12.0.0",
+    "vue-cli-plugin-quasar": "~5.0.1"
   },
   "eslintConfig": {
     "root": true,
@@ -39,5 +53,15 @@
     "last 2 versions",
     "not dead",
     "not ie 11"
-  ]
+  ],
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.vue": "eslint --fix"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
 }
