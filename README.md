@@ -29,6 +29,8 @@
 - Google Maps
 
 # PRINTS
-- WIP
+![print1](https://user-images.githubusercontent.com/1072595/197891972-b9f3936f-156f-4f5e-b33c-bfc0643f09b5.PNG)
+![print2](https://user-images.githubusercontent.com/1072595/197891987-bb8e30e1-e840-45ad-ab51-d8dbb61a71ba.png)
+
 # TRY YOURSELF
 - https://countries-4nl9xucua-diogorg.vercel.app/
