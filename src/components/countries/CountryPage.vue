@@ -17,7 +17,7 @@ export default {
         CountryForm,
         CountryResult
     },
-
+    data: () => ({}),
     beforeCreate() {
         this.$store.commit('getAllCountriesAndRegions')
     },
