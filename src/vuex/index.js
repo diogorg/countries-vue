@@ -6,7 +6,7 @@ const getLanguages = (countries) => {
     const list = countries.map((c) => {
         if (!c.languages) return
         return Object.values(c.languages)
-    }).flat().sort()
+    }).flat().sort().filter(v => v !== undefined)
     return ['ALL', ...new Set(list)]
 }
 export const store = new Vuex.Store({

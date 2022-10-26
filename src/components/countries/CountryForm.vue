@@ -1,10 +1,19 @@
 <template>
     <div class="filter-col q-pa-sm">
-        <form class="filter-form q-pa-sm q-pb-md shadow-1">
+        <form v-on:keyup.enter="filterCountries" class="filter-form q-pa-sm q-pb-md shadow-1">
             <h3 class="q-pa-sm">Filter Countries</h3>
             <q-input outlined v-model="name" label="Country Name" class="q-ma-sm" />
             <q-select outlined v-model="region" :options="regions" label="Region" class="q-ma-sm" />
-            <q-select outlined v-model="lang" :options="langs" label="Languages" class="q-ma-sm" />
+            <q-select class="q-ma-sm" outlined v-model="lang" use-input hide-selected fill-input input-debounce="0"
+                :options="options" @filter="filterLangs" label="Languages" emit-value map-options>
+                <template v-slot:no-option>
+                    <q-item>
+                        <q-item-section class="text-grey">
+                            No results
+                        </q-item-section>
+                    </q-item>
+                </template>
+            </q-select>
             <q-btn @click="filterCountries" class="glossy q-ma-sm" color="deep-orange" icon="search" label="Filter" />
         </form>
     </div>
@@ -17,9 +26,23 @@ export default {
     data: () => ({
         name: '',
         region: null,
-        lang: null
+        lang: null,
+        options: []
     }),
+    mounted() {
+        this.options = this.langs
+    },
     methods: {
+        filterLangs(val, update) {
+            update(() => {
+                if (!val) {
+                    this.options = this.langs
+                    return
+                }
+                const needle = val.toLowerCase()
+                this.options = this.langs.filter(v => v.toLowerCase().indexOf(needle) > -1)
+            })
+        },
         async filterCountries() {
             this.$q.loading.show({
                 message: 'Filtering the countries',

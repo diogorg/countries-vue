@@ -49,6 +49,7 @@ export default {
     width: fit-content;
     overflow: auto;
     min-width: calc(100% - 300px);
+    max-width: calc(100% - 300px);
     height: max-content;
 }
 
