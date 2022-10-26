@@ -3,13 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "dev": "nodemon",
+    "test": "jest --watch",
+    "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "husky-install": "husky install",
+    "dev": "nodemon",
     "husky-fix": "npx mrm lint-staged",
-    "prepare": "husky install"
+    "husky-install": "husky install",
+    "prepare": "husky install",
+    "start": "vue-cli-service serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -27,12 +29,18 @@
     "@babel/eslint-parser": "^7.12.16",
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@testing-library/vue": "^6.6.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-unit-jest": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "@vue/vue3-jest": "^27.0.0-alpha.1",
+    "babel-jest": "^27.0.6",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
     "husky": "^8.0.1",
+    "jest": "^27.0.5",
     "lint-staged": "^13.0.3",
     "nodemon": "^2.0.20",
     "sass": "1.32.12",
@@ -51,7 +59,18 @@
     "parserOptions": {
       "parser": "@babel/eslint-parser"
     },
-    "rules": {}
+    "rules": {},
+    "overrides": [
+      {
+        "files": [
+          "**/__tests__/*.{j,t}s?(x)",
+          "**/tests/unit/**/*.spec.{j,t}s?(x)"
+        ],
+        "env": {
+          "jest": true
+        }
+      }
+    ]
   },
   "browserslist": [
     "> 1%",
@@ -59,14 +78,14 @@
     "not dead",
     "not ie 11"
   ],
-  "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.vue": "eslint --fix"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.vue": "eslint --fix"
   }
 }
