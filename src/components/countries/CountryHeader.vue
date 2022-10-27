@@ -1,10 +1,10 @@
 <template>
     <q-toolbar class="bg-black text-white shadow-1 q-mb-sm">
         <q-toolbar-title>
-            {{user.name}} :: {{user.app}}
+            {{ user.name }} :: {{ user.app }}
         </q-toolbar-title>
         <div class="side-bar">
-            <a target="_blank" :href="user.github">
+            <a target="_blank" :href="user.github" id="github-link">
                 <font-awesome-icon icon="fa-brands fa-github" class="fa-2xl" />
             </a>
             <q-avatar>
