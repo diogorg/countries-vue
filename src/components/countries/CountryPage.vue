@@ -19,7 +19,8 @@ export default {
     },
     data: () => ({}),
     beforeCreate() {
-        this.$store.commit('getAllCountriesAndRegions')
+        const quasar = this.$q
+        this.$store.commit('getAllCountriesAndRegions', { quasar })
     },
     setup() { }
 }
