@@ -1,6 +1,6 @@
-import {getCountriesFromCache, getCountriesFromApi} from './model/get-countries'
-import {apiFailNotification, apiSuccessNotification} from '@/notifications'
-import {filterCountries} from './model/filter-countries'
+import { getCountriesFromCache, getCountriesFromApi } from './model/get-countries'
+import { apiFailNotification, apiSuccessNotification } from '@/notifications'
+import { filterCountries } from './model/filter-countries'
 
 export const mutation = {
     selectCountry(state, { country }) {
