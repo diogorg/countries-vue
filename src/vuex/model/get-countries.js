@@ -7,6 +7,7 @@ const getAllLanguagesByCountries = (countries) => {
         if (!c.languages) return
         return Object.values(c.languages)
     }).flat().sort().filter(v => v !== undefined)
+
     return ['ALL', ...new Set(list)]
 }
 
@@ -27,8 +28,9 @@ export const getCountriesFromApi = () => {
                 const countries = response.data.sort((a, b) => a.name.common > b.name.common ? 1 : -1)
                 const regions = ['ALL', ...new Set(response.data.map((country) => country.region).flat())].sort().flat()
                 const langs = getAllLanguagesByCountries(response.data)
-                setCache(countries)
                 const total = countries
+                setCache(countries)
+                
                 return {countries, total, regions, langs}
             })
             .catch(function () {
