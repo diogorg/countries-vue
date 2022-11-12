@@ -49,9 +49,8 @@ export default {
                 boxClass: 'bg-grey-2 text-grey-9',
                 spinnerColor: 'primary'
             })
-            const quasar = this.$q
             setTimeout(() => {
-                this.$store.commit('filterCountries', { name: this.name, region: this.region, lang: this.lang, quasar })
+                this.$store.commit('filterCountries', { name: this.name, region: this.region, lang: this.lang })
                 this.$q.loading.hide()
             }, 700)
         }
