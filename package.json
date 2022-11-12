@@ -5,6 +5,7 @@
   "scripts": {
     "build": "vue-cli-service build",
     "test": "jest --watch",
+    "test:coverage": "vue-cli-service test:unit --coverage",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "dev": "nodemon",

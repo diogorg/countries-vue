@@ -17,3 +17,6 @@ version:
 test:
 	make up && \
 	docker-compose exec app-countries npm run test
+test/coverage:
+	make up && \
+	docker-compose exec app-countries npm run test:coverage
