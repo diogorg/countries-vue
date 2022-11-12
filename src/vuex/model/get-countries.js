@@ -12,28 +12,29 @@ const getAllLanguagesByCountries = (countries) => {
 }
 
 export const getCountriesFromCache = () => {
-    if (!localStorage.countries) return undefined;
-    const countries = JSON.parse(localStorage.countries)
+    const cached = localStorage.getItem('countries')
+    if (!cached) return undefined;
+    const countries = JSON.parse(cached)
     const total = countries
     const regions = ['ALL', ...new Set(countries.map((country) => country.region).flat())].sort().flat()
     const langs = getAllLanguagesByCountries(countries)
-    return {countries, total, regions, langs}
+    return { countries, total, regions, langs }
 }
 
 const setCache = (countries) => localStorage.countries = JSON.stringify(countries)
 
-export const getCountriesFromApi = () => {
-    axios.get(request)
-            .then(function (response) {
-                const countries = response.data.sort((a, b) => a.name.common > b.name.common ? 1 : -1)
-                const regions = ['ALL', ...new Set(response.data.map((country) => country.region).flat())].sort().flat()
-                const langs = getAllLanguagesByCountries(response.data)
-                const total = countries
-                setCache(countries)
-                
-                return {countries, total, regions, langs}
-            })
-            .catch(function () {
-                return undefined
-            });
+const requestApi = async () => {
+    return await axios.get(request)
+}
+
+export const getCountriesFromApi = async () => {
+    const response = await requestApi()
+    if (!response) return undefined
+    const countries = response.data.sort((a, b) => a.name.common > b.name.common ? 1 : -1)
+    const regions = ['ALL', ...new Set(response.data.map((country) => country.region).flat())].sort().flat()
+    const langs = getAllLanguagesByCountries(response.data)
+    const total = countries
+    setCache(countries)
+
+    return { countries, total, regions, langs }
 }
