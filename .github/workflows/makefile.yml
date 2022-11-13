@@ -10,6 +10,7 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
+    - run: sudo apt install jq
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v2
       with:
@@ -20,11 +21,11 @@ jobs:
     - name: Build
       run: npm i
       
-    - name: Test Coverage
-      run: |
-        SUMMARY="$(npm run test:coverage)"
-        TOKENS=($SUMMARY)
-        echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
+    - name: Run Test Coverage
+      run: npm run jest:coverage
+    
+    - name: Export Coverage To Env
+      run: echo "COVERAGE=$(bash .coverage)" >> $GITHUB_ENV
         
     - name: Create the Badge
       uses: schneegans/dynamic-badges-action@v1.1.0
