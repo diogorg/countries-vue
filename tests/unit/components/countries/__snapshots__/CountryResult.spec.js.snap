@@ -3,7 +3,567 @@
 exports[`CountryResult Should match snapshot 1`] = `
 <select-dialog-stub></select-dialog-stub>
 <div class="q-pa-sm countries">
-  <div class="empty">Nothing found</div>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bg.png" class="flag">
+      <div class="text-h6">Bulgaria</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/fk.png" class="flag">
+      <div class="text-h6">Falkland Islands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sy.png" class="flag">
+      <div class="text-h6">Syria</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/by.png" class="flag">
+      <div class="text-h6">Belarus</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/in.png" class="flag">
+      <div class="text-h6">India</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cu.png" class="flag">
+      <div class="text-h6">Cuba</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gp.png" class="flag">
+      <div class="text-h6">Guadeloupe</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mk.png" class="flag">
+      <div class="text-h6">North Macedonia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/tj.png" class="flag">
+      <div class="text-h6">Tajikistan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bt.png" class="flag">
+      <div class="text-h6">Bhutan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gq.png" class="flag">
+      <div class="text-h6">Equatorial Guinea</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sl.png" class="flag">
+      <div class="text-h6">Sierra Leone</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sh.png" class="flag">
+      <div class="text-h6">Saint Helena, Ascension and Tristan da Cunha</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ua.png" class="flag">
+      <div class="text-h6">Ukraine</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/il.png" class="flag">
+      <div class="text-h6">Israel</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/so.png" class="flag">
+      <div class="text-h6">Somalia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ni.png" class="flag">
+      <div class="text-h6">Nicaragua</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gs.png" class="flag">
+      <div class="text-h6">South Georgia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/lk.png" class="flag">
+      <div class="text-h6">Sri Lanka</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/us.png" class="flag">
+      <div class="text-h6">United States</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/md.png" class="flag">
+      <div class="text-h6">Moldova</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ga.png" class="flag">
+      <div class="text-h6">Gabon</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ee.png" class="flag">
+      <div class="text-h6">Estonia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ca.png" class="flag">
+      <div class="text-h6">Canada</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/nr.png" class="flag">
+      <div class="text-h6">Nauru</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ne.png" class="flag">
+      <div class="text-h6">Niger</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gf.png" class="flag">
+      <div class="text-h6">French Guiana</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bq.png" class="flag">
+      <div class="text-h6">Caribbean Netherlands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/tw.png" class="flag">
+      <div class="text-h6">Taiwan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bv.png" class="flag">
+      <div class="text-h6">Bouvet Island</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/tn.png" class="flag">
+      <div class="text-h6">Tunisia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cc.png" class="flag">
+      <div class="text-h6">Cocos (Keeling) Islands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/pg.png" class="flag">
+      <div class="text-h6">Papua New Guinea</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/hu.png" class="flag">
+      <div class="text-h6">Hungary</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gl.png" class="flag">
+      <div class="text-h6">Greenland</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ms.png" class="flag">
+      <div class="text-h6">Montserrat</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/pw.png" class="flag">
+      <div class="text-h6">Palau</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/wf.png" class="flag">
+      <div class="text-h6">Wallis and Futuna</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/fi.png" class="flag">
+      <div class="text-h6">Finland</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ml.png" class="flag">
+      <div class="text-h6">Mali</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/hn.png" class="flag">
+      <div class="text-h6">Honduras</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/fo.png" class="flag">
+      <div class="text-h6">Faroe Islands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gw.png" class="flag">
+      <div class="text-h6">Guinea-Bissau</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cf.png" class="flag">
+      <div class="text-h6">Central African Republic</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gn.png" class="flag">
+      <div class="text-h6">Guinea</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sx.png" class="flag">
+      <div class="text-h6">Sint Maarten</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/vc.png" class="flag">
+      <div class="text-h6">Saint Vincent and the Grenadines</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/km.png" class="flag">
+      <div class="text-h6">Comoros</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ad.png" class="flag">
+      <div class="text-h6">Andorra</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/hr.png" class="flag">
+      <div class="text-h6">Croatia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cn.png" class="flag">
+      <div class="text-h6">China</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/nu.png" class="flag">
+      <div class="text-h6">Niue</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/lr.png" class="flag">
+      <div class="text-h6">Liberia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/hk.png" class="flag">
+      <div class="text-h6">Hong Kong</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/as.png" class="flag">
+      <div class="text-h6">American Samoa</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/iq.png" class="flag">
+      <div class="text-h6">Iraq</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/kn.png" class="flag">
+      <div class="text-h6">Saint Kitts and Nevis</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ax.png" class="flag">
+      <div class="text-h6">Åland Islands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bw.png" class="flag">
+      <div class="text-h6">Botswana</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cw.png" class="flag">
+      <div class="text-h6">Curaçao</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ly.png" class="flag">
+      <div class="text-h6">Libya</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mn.png" class="flag">
+      <div class="text-h6">Mongolia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/cl.png" class="flag">
+      <div class="text-h6">Chile</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/zm.png" class="flag">
+      <div class="text-h6">Zambia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ci.png" class="flag">
+      <div class="text-h6">Ivory Coast</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/li.png" class="flag">
+      <div class="text-h6">Liechtenstein</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/kg.png" class="flag">
+      <div class="text-h6">Kyrgyzstan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/tm.png" class="flag">
+      <div class="text-h6">Turkmenistan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mu.png" class="flag">
+      <div class="text-h6">Mauritius</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sm.png" class="flag">
+      <div class="text-h6">San Marino</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ph.png" class="flag">
+      <div class="text-h6">Philippines</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bn.png" class="flag">
+      <div class="text-h6">Brunei</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/va.png" class="flag">
+      <div class="text-h6">Vatican City</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/kz.png" class="flag">
+      <div class="text-h6">Kazakhstan</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/re.png" class="flag">
+      <div class="text-h6">Réunion</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sa.png" class="flag">
+      <div class="text-h6">Saudi Arabia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mx.png" class="flag">
+      <div class="text-h6">Mexico</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/th.png" class="flag">
+      <div class="text-h6">Thailand</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ir.png" class="flag">
+      <div class="text-h6">Iran</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sb.png" class="flag">
+      <div class="text-h6">Solomon Islands</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sk.png" class="flag">
+      <div class="text-h6">Slovakia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/im.png" class="flag">
+      <div class="text-h6">Isle of Man</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/ws.png" class="flag">
+      <div class="text-h6">Samoa</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sc.png" class="flag">
+      <div class="text-h6">Seychelles</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/sg.png" class="flag">
+      <div class="text-h6">Singapore</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/rs.png" class="flag">
+      <div class="text-h6">Serbia</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/gy.png" class="flag">
+      <div class="text-h6">Guyana</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/bj.png" class="flag">
+      <div class="text-h6">Benin</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/lu.png" class="flag">
+      <div class="text-h6">Luxembourg</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mv.png" class="flag">
+      <div class="text-h6">Maldives</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/mz.png" class="flag">
+      <div class="text-h6">Mozambique</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/aw.png" class="flag">
+      <div class="text-h6">Aruba</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
+  <q-card class="my-card q-ma-sm">
+    <q-img src="https://flagcdn.com/w320/aq.png" class="flag">
+      <div class="text-h6">Antarctica</div>
+    </q-img>
+    <q-card-actions vertical="" align="center"><button icon-right="open_in_new" label="Open" flat=""></button></q-card-actions>
+  </q-card>
   <!--v-if-->
+  <div class="total q-pr-xl">
+    <q-chip color="deep-orange" text-color="white" icon="filter_alt"> Total: <b class="q-pa-sm">93</b></q-chip>
+  </div>
 </div>
 `;

@@ -35,7 +35,6 @@ export default {
     computed: {
         ...mapState(['countries']),
     },
-    setup() { }
 }
 </script>
 
