@@ -4,8 +4,8 @@
             <h3 class="q-pa-sm">Filter Countries</h3>
             <q-input outlined v-model="name" label="Country Name" class="q-ma-sm" />
             <q-select outlined v-model="region" :options="regions" label="Region" class="q-ma-sm" />
-            <q-select class="q-ma-sm" outlined v-model="lang" use-input hide-selected fill-input input-debounce="0"
-                :options="options" @filter="filterLangs" label="Languages" emit-value map-options>
+            <q-select id="filter-lang-select" class="q-ma-sm" outlined v-model="lang" use-input hide-selected fill-input
+                input-debounce="0" :options="options" @filter="filterLangs" label="Languages" emit-value map-options>
                 <template v-slot:no-option>
                     <q-item>
                         <q-item-section class="text-grey">
@@ -14,7 +14,8 @@
                     </q-item>
                 </template>
             </q-select>
-            <q-btn @click="filterCountries" class="glossy q-ma-sm" color="deep-orange" icon="search" label="Filter" />
+            <q-btn id="filter-button" @click="filterCountries()" class="glossy q-ma-sm" color="deep-orange"
+                icon="search" label="Filter" />
         </form>
     </div>
 </template>
@@ -33,15 +34,16 @@ export default {
         this.options = this.langs
     },
     methods: {
+        updateLangs(val) {
+            if (!val) {
+                this.options = this.langs
+                return
+            }
+            const needle = val.toLowerCase()
+            this.options = this.langs.filter(v => v.toLowerCase().indexOf(needle) > -1)
+        },
         filterLangs(val, update) {
-            update(() => {
-                if (!val) {
-                    this.options = this.langs
-                    return
-                }
-                const needle = val.toLowerCase()
-                this.options = this.langs.filter(v => v.toLowerCase().indexOf(needle) > -1)
-            })
+            update(this.updateLangs(val))
         },
         async filterCountries() {
             this.$q.loading.show({
@@ -49,17 +51,13 @@ export default {
                 boxClass: 'bg-grey-2 text-grey-9',
                 spinnerColor: 'primary'
             })
-            setTimeout(() => {
-                this.$store.commit('filterCountries', { name: this.name, region: this.region, lang: this.lang })
-                this.$q.loading.hide()
-            }, 700)
+            this.$store.commit('filterCountries', { name: this.name, region: this.region, lang: this.lang })
+            this.$q.loading.hide()
         }
     },
     computed: {
         ...mapState(['regions', 'langs']),
     },
-    components: {},
-    setup() { }
 }
 </script>
 
