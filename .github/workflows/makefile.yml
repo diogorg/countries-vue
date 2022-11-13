@@ -21,23 +21,17 @@ jobs:
       run: npm i
       
     - name: Test Coverage
-      run: npm run test:coverage
-      
-    - name: Monitor coverage
-      uses: slavcodev/coverage-monitor-action@v1
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        coverage_path: "coverage/clover.xml"
-        threshold_alert: 10
-        threshold_warning: 50
-        threshold_metric: "lines"
+      run: |
+        SUMMARY="$(npm run test:coverage)
+        TOKENS=($SUMMARY)
+        echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
         
     - name: Create the Badge
-      uses: schneegans/dynamic-badges-action@v1.0.0
+      uses: schneegans/dynamic-badges-action@v1.1.0
       with:
         auth: ${{ secrets.GIST_SECRET }}
         gistID: bdf12e211619b048f9cbd75e89922b92
-        filename: countries-vue__${{ env.BRANCH }}.json
+        filename: countries-vue_coverage.json
         label: Test Coverage
         message: ${{ env.COVERAGE }}
         color: green
