@@ -1,3 +1,9 @@
+# Coverage monitor
+[![Status][ico-github-actions]][link-github]
+
+[ico-github-actions]: https://github.com/slavcodev/coverage-monitor-action/workflows/build/badge.svg
+[link-github]: https://github.com/slavcodev/coverage-monitor-action
+
 # INTRODUTION
 - Hi, my name is Diogo and I made this application just to learn and have fun with vue js
 # FEATURES
@@ -16,14 +22,6 @@
 - Sass
 - Local Storage
     - Good to avoid calling API all the time
-# TODO LIST
-1. Add jest tests
-    - Sorry, my fault
-2. CI/CD for tests and coverage
-3. Change vuex to use real models, adapters and interfaces
-    - Get a little close to a SOLID in front-end
-4. Rebuild with Typescript
-    - I like Typescript.
 # CREDITS
 - This app uses: REST Countries (https://restcountries.com)
 - Google Maps
