@@ -1,3 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SelectDialog.vue Should match snapshot 1`] = `<!--v-if-->`;
+exports[`SelectDialog.vue Should match snapshot 1`] = `
+<q-dialog modelvalue="true">
+  <q-card class="dialog-card">
+    <q-card-section class="bg-blue-grey-2 text-black q-mb-none dialog-header">
+      <div vertical="" class="text-h4">Bulgaria <span>(BUL)</span></div>
+      <div><img class="q-ma-sm" src="https://mainfacts.com/media/images/coats_of_arms/bg.png" style="height: 32px; width: auto;"><img class="q-ma-sm" src="https://flagcdn.com/w320/bg.png" style="height: 32px; width: auto;"></div>
+    </q-card-section>
+    <div class="dialog-content">
+      <div class="maps"><iframe style="height: 100%;" width="260" id="gmap_canvas" src="https://maps.google.com/maps?q=Bulgaria&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+      <div class="infos q-pb-lg">
+        <p><span class="head">Official Name</span><span class="info">Republic of Bulgaria</span></p>
+        <p><span class="head">Region</span><span class="info">Europe <span>- (Southeast Europe)</span></span></p>
+        <p><span class="head">Language</span><span class="info">Bulgarian</span></p>
+        <p><span class="head">Capital</span><span class="info">Sofia</span></p>
+        <p><span class="head">Currency</span>
+        <ul class="info q-ma-none" style="padding-left: 10px;">
+          <li>Bulgarian lev (лв) </li>
+        </ul>
+        </p>
+        <p><span class="head">Total Area</span><span class="info">110,879</span></p>
+        <p><span class="head">Population</span><span class="info">6,927,288</span></p>
+        <p><span class="head">Borders</span>
+        <ul class="info q-ma-none borders-list" style="padding-left: 10px;">
+          <li>GRC</li>
+          <li>MKD</li>
+          <li>ROU</li>
+          <li>SRB</li>
+          <li>TUR</li>
+          <!--v-if-->
+        </ul>
+        </p>
+        <p><span class="head">Details</span><span class="info"><button size="11px" target="_blank" href="https://www.openstreetmap.org/relation/186382" align="between" class="btn-fixed-width" color="primary" label="Open Detail" icon="flight_takeoff"></button></span></p>
+      </div>
+    </div>
+    <q-card-actions align="right" class="close-button"><button flat="" label="close" color="primary" id="close-button"></button></q-card-actions>
+  </q-card>
+</q-dialog>
+`;

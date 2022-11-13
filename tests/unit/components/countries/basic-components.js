@@ -1,5 +1,5 @@
 export const components = {
-        'q-btn': 'q-btn',
+        'q-btn': 'button',
         'q-item': 'q-item',
         'q-toolbar': 'q-toolbar',
         'q-item-section': 'q-item-section',

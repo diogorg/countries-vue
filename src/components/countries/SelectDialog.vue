@@ -68,7 +68,7 @@
             </div>
 
             <q-card-actions align="right" class="close-button">
-                <q-btn flat label="close" color="primary" @click="closeDialog" />
+                <q-btn flat label="close" color="primary" @click="closeDialog()" id="close-button" />
             </q-card-actions>
         </q-card>
     </q-dialog>
@@ -78,7 +78,6 @@
 import { mapState, mapMutations } from 'vuex'
 export default {
     name: 'SelectDialog',
-    components: {},
     methods: {
         ...mapMutations(['closeDialog']),
 
@@ -90,7 +89,6 @@ export default {
     computed: {
         ...mapState(['dialog', 'selected']),
     },
-    setup() { }
 }
 </script>
 <style lang="scss" scoped>
