@@ -1,0 +1,1 @@
+jq -r .total.lines.pct coverage/coverage-summary.json

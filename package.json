@@ -6,6 +6,7 @@
     "build": "vue-cli-service build",
     "test": "jest --watch",
     "test:coverage": "vue-cli-service test:unit --coverage --no-cache",
+    "jest:coverage": "jest --coverage --coverageReporters='json-summary'",
     "test:unit": "vue-cli-service test:unit --no-cache",
     "lint": "vue-cli-service lint",
     "dev": "nodemon",
