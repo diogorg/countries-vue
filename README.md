@@ -6,6 +6,8 @@
 
 ![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/diogorg/bdf12e211619b048f9cbd75e89922b92/raw/countries-vue_coverage.json)
 
+![Coverage](https://user-images.githubusercontent.com/1072595/201550553-64a746d9-f5d9-480e-a70b-1d3d95417926.PNG)
+
 # INTRODUTION
 - Hi, my name is Diogo and I made this application just to learn and have fun with vue js
 # FEATURES
