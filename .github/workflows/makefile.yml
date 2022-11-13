@@ -1,4 +1,4 @@
-name: CI
+name: CI - Jest
 
 on:
   push:
@@ -7,12 +7,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
-
-    runs-on: node:18.11.0-alpine3.16
-
+  publish:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
-
-    - name: Test
-      run: make test
+    - uses: actions/setup-node@v2
+      with:
+        node-version: 18.x
+    - uses: expo/expo-github-action@v6
+      with: 
+        expo-version: 4.x
+    - run: npm run test:coverage
