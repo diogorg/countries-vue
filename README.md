@@ -4,6 +4,8 @@
 [ico-github-actions]: https://github.com/slavcodev/coverage-monitor-action/workflows/build/badge.svg
 [link-github]: https://github.com/slavcodev/coverage-monitor-action
 
+![Coverage Badge](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/diogorg/bdf12e211619b048f9cbd75e89922b92/raw/countries-vue_coverage.json)
+
 # INTRODUTION
 - Hi, my name is Diogo and I made this application just to learn and have fun with vue js
 # FEATURES
