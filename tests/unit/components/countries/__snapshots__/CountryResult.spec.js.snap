@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryResult Should match snapshot 1`] = `
+<select-dialog-stub></select-dialog-stub>
+<div class="q-pa-sm countries">
+  <div class="empty">Nothing found</div>
+  <!--v-if-->
+</div>
+`;

@@ -78,7 +78,6 @@
 import { mapState, mapMutations } from 'vuex'
 export default {
     name: 'SelectDialog',
-    data() { },
     components: {},
     methods: {
         ...mapMutations(['closeDialog']),

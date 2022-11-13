@@ -1,16 +1,12 @@
 import CountryHeader from '@/components/countries/CountryHeader.vue'
 import { shallowMount } from '@vue/test-utils'
+import { components } from './basic-components'
 
 const global = {
-        components: {
-          'q-toolbar': 'q-toolbar',
-          'q-avatar': 'q-avatar',
-          'font-awesome-icon': 'font-awesome-icon',
-          'q-toolbar-title': 'q-toolbar-title'
-        }
-      }
+  components
+}
 describe('CountryHeader.vue', () => {
-  const wrapper = shallowMount(CountryHeader, {global})
+  const wrapper = shallowMount(CountryHeader, { global })
 
   it('Should have tool bar with infos', () => {
     expect(wrapper.html()).toContain('<q-toolbar class="bg-black text-white shadow-1 q-mb-sm">')

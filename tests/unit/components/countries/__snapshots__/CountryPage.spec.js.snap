@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryPage.vue Should match snapshot 1`] = `
+<country-header-stub></country-header-stub>
+<div class="main q-pb-md">
+  <country-form-stub></country-form-stub>
+  <country-result-stub></country-result-stub>
+</div>
+`;

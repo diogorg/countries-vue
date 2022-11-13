@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App.vue Should match snapshot 1`] = `<country-page-stub></country-page-stub>`;

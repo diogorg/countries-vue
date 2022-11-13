@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountryForm.vue Should match snapshot 1`] = `
+<div class="filter-col q-pa-sm">
+  <form class="filter-form q-pa-sm q-pb-md shadow-1">
+    <h3 class="q-pa-sm">Filter Countries</h3>
+    <q-input outlined="" modelvalue="" label="Country Name" class="q-ma-sm"></q-input>
+    <q-select outlined="" options="ALL" label="Region" class="q-ma-sm"></q-select>
+    <q-select class="q-ma-sm" outlined="" use-input="" hide-selected="" fill-input="" input-debounce="0" options="" label="Languages" emit-value="" map-options=""></q-select>
+    <q-btn class="glossy q-ma-sm" color="deep-orange" icon="search" label="Filter"></q-btn>
+  </form>
+</div>
+`;
