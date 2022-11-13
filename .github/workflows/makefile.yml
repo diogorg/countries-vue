@@ -22,7 +22,7 @@ jobs:
       
     - name: Test Coverage
       run: |
-        SUMMARY="$(npm run test:coverage)
+        SUMMARY="$(npm run test:coverage)"
         TOKENS=($SUMMARY)
         echo "COVERAGE=$(echo ${TOKENS[2]})" >> $GITHUB_ENV
         
